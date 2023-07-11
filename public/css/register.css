@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;300&family=Rubik+Pixels&display=swap');
+
+:root {
+    --dark-color: #00203FFF;
+    --darker-color: #084C61FF;
+    --darkest-color: #07689F;
+    --light-color: #B5D9EB;
+    --lighter-color: #CEE6F2;
+    --lightest-color: #FEFFFF;
+}
+
+body {
+    /* background-color: var(--light-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    height: 600px;
+}
+
+nav {
+    /* width:90%; */
+    /* background-color: var(--dark-color); */
+    color: var(--darkest-color);
+    padding: 20px;
+    display: flex;
+    /* flex-direction:column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fact {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 40px;
+    font-size: 15px;
+    color: var(--dark-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--light-color);
+    margin-bottom: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    background-color: var(--lightest-color);
+    display: inline-block;
+    color: var(--dark-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.logo a:hover {
+    background-color: #ddd;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 470px;
+    padding: 50px;
+    margin-right: 20px;
+    border-radius: 30px 20px 30px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.input-box {
+    margin: 20px 0;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--dark-color);
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.input-box input:focus {
+    border-color: var(--darker-color);
+    outline: none;
+}
+
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--lightest-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--darker-color);
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+}
+
+p a {
+    color: var(--darkest-color);
+    text-decoration: none;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    border-color: var(--lighter-color);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.org-img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.organized-image {
+    max-width: 100%;
+}
+
+#simpleUsage {
+    font-size: 1.9rem;
+    color: var(--darkest-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
